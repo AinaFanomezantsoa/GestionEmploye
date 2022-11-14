@@ -11,21 +11,13 @@
     <?php  foreach ($dataMod as $employe){;?>
 
     <form method="POST" action="index.php?Controller=employe&action=edit">
-<<<<<<< HEAD
        <input type="text" name="id" hidden value="<?php echo $employe['id']?>">
-=======
        <input type="text" name="id_employe" hidden value="<?php echo $employe['id']?>">
->>>>>>> 1cd47740c7a32b17ffede65017c300e27b1ce89f
         <label for="name">Nom Employé</label>
         <input type="text" name="nom_employe" value="<?php echo $employe['nom_employe']?>"><br><br>
         <label for="name">Prénom Employé</label>
         <input type="text" name="prenom_employe" value="<?php echo $employe['prenom_employe']?>"><br><br>
         <input type="submit" value="modifier">
-<<<<<<< HEAD
-
-=======
-        
->>>>>>> 1cd47740c7a32b17ffede65017c300e27b1ce89f
     </form>
     <?php
         }?>
