@@ -57,21 +57,6 @@
                 header("Location:index.php?Controller=employe");
             }
             break;
-
-        case "recherche":
-            # logique...
-            @$keywords = $_GET["keywords"];
-            @$valider = $_GET["valider"];
-            if(isset($valider) && !empty(trim($keywords))){
-                $res=$db->getData("SELECT nom_employe FROM employe WHERE nom_employe LIKE '%$keywords%'");
-                $res->setFetchMode(PDO::FETCH_ASSOC);
-                $res->execute();
-                $tab=$res-fetchAll();
-                $afficher="oui";
-                header("Location:index.php?Controller=employe");
-}
-            require_once "View/index.php";
-            break;
         default:
             # logique...
             $data = $db->getData("SELECT * FROM employe");

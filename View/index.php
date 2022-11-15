@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,37 +8,17 @@
     <title>Gestion Employé</title>
 </head>
 <body>
-<form action="" method="get">
-<input type="search" name="keywords" value="">
-<input type="submit" name= "valider" value="recherche"><br>
-</form>
-<table class="border">
-        <thead>
-            <tr>
-                <td>Nom Employé</td>
-                <td>Prénom Employé</td>
-                <td>Action</td>
-            </tr>
-        </thead>
-        <tbody>
-                    <tr>
-                    <td>Aina</td>
-                    <td>Aina</td>
-                    <td>
-                        <a href="" class="btn">Modifier</a>
-                        <a href="" class="btn">Supprimer</a>
-                    </td>
-                </tr>
-        </tbody>
-    </table>
+    <?php
+        include 'recherche.php';
+    ?>
     <h1>Liste Employé</h1>
     <a href="index.php?Controller=employe&action=ajout" class="btn">Ajout</a>
     <table class="border">
         <thead>
             <tr>
-                <td>Nom Employé</td>
-                <td>Prénom Employé</td>
-                <td>Action</td>
+                <th>Nom Employé</th>
+                <th>Prénom Employé</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody>
