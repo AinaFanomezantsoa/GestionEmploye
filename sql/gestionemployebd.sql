@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  mer. 09 nov. 2022 à 03:11
+-- Généré le :  mar. 15 nov. 2022 à 15:43
 -- Version du serveur :  5.7.24
 -- Version de PHP :  7.2.14
 
@@ -30,19 +30,22 @@ SET time_zone = "+00:00";
 
 DROP TABLE IF EXISTS `employe`;
 CREATE TABLE IF NOT EXISTS `employe` (
-  `id_employe` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int(20) NOT NULL AUTO_INCREMENT,
   `nom_employe` varchar(200) NOT NULL,
   `prenom_employe` varchar(200) NOT NULL,
-  PRIMARY KEY (`id_employe`),
+  PRIMARY KEY (`id`),
   UNIQUE KEY `UNIQUE` (`nom_employe`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `employe`
 --
 
-INSERT INTO `employe` (`id_employe`, `nom_employe`, `prenom_employe`) VALUES
-(1, 'Fanomezantsoa', 'Aina');
+INSERT INTO `employe` (`id`, `nom_employe`, `prenom_employe`) VALUES
+(1, 'Fanomezantsoa', 'Aina'),
+(2, 'Rafanomezantsoa', 'Lova'),
+(5, 'Teste Nom', 'Teste Prénom'),
+(8, 'aaa', 'hoy');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
